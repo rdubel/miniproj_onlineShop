@@ -7,5 +7,12 @@ $(document).ready(function(){
         $('.search-panel span#search_concept').text(concept);
         $('.input-group #search_param').val(param);
     });
-    $('.sliderPres').slick();
+
+    $('.sliderPres').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        dots: true
+    });
 });
