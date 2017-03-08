@@ -1,3 +1,6 @@
+header {
+    background-color: #98531a;
+}
 h1 {
     font-size: 50px;
     text-align: center;
@@ -9,4 +12,80 @@ h1 {
     background-size: cover;
     color: #EBCF9D;
     font-family: 'Dancing Script', cursive;
+}
+#navbar-collapse-1 {
+    background-color: #502b0e;
+}
+nav a {
+    color: #ebcf90;
+    border-radius: 5px;
+}
+nav li a:hover{
+    background-color: #ebcf90 !important;
+    color:  #482306;
+}
+
+nav li a:focus {
+    background-color: #ebcf90 !important;
+    color:  #482306;
+}
+#seach {
+    margin-left: 1em;
+}
+.btn-lg {
+    margin-left: 10.5em;
+    color: #ebcf90;
+}
+
+a.dropdown-toggle {
+    color: #ebcf90;
+    margin-right: 0.5em;
+}
+.navbar-right .dropdown-menu {
+    min-width: 15em;
+    padding:  0.5em;
+}
+
+button.dropdown-toggle {
+    background-color: #502b0e;
+    color: #ebcf90;
+    border: 1px solid #502b0e;
+}
+button.dropdown-toggle:hover {
+    color: #ebcf90;
+}
+button.dropdown-toggle:focus {
+    color: #ebcf90;
+}
+
+div.input-group-btn > ul:nth-child(2) {
+    background-color: #98531a;
+}
+div.input-group-btn > ul:nth-child(2) > li > a {
+    color: #ebcf90;
+}
+
+div.input-group-btn > ul:nth-child(2) > li > a:hover {
+    background-color: #6a4727;
+    color: #ebcf90;
+}
+
+footer {
+    background-color: #98531a;
+    color: #ebcf90;
+    text-align: center;
+    padding-top: 1em;
+}
+
+#social_nav {
+    background-color: #482306;
+    margin: 0;
+    padding: 0;
+}
+#social_nav li a i {
+    color: #ebcf90;
+}
+#copyright {
+    margin-top: 1em;
+    font-size: 10px;
 }
