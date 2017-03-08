@@ -6,7 +6,7 @@ h1 {
     text-align: center;
     width: 200px;
     height: 133px;
-    padding-top: 1em;
+    padding-top: 0.7em;
     background: url("../img/logo.png");
     background-repeat: no-repeat;
     background-size: cover;
@@ -70,6 +70,10 @@ div.input-group-btn > ul:nth-child(2) > li > a:hover {
     color: #ebcf90;
 }
 
+p {
+    font-family: 'Roboto', sans-serif;
+}
+
 footer {
     background-color: #98531a;
     color: #ebcf90;
@@ -80,12 +84,54 @@ footer {
 #social_nav {
     background-color: #482306;
     margin: 0;
-    padding: 0;
+    padding: 1em;
 }
 #social_nav li a i {
     color: #ebcf90;
+    font-size: 20px;
 }
 #copyright {
     margin-top: 1em;
     font-size: 10px;
+}
+
+main {
+    background-color: #ebcf90;
+    padding: 3em;
+}
+
+#pres {
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+    font-size: 25px;
+    color: #98531a;
+}
+
+.aboutus {
+    color: #482306;
+}
+
+h3 {
+    color: #482306;
+    text-align: center;
+}
+
+
+.top-products img {
+    margin-left: 2em;
+}
+
+.top-products > div {
+    text-align: center;
+    padding: 0.5em;
+}
+
+.top-products p {
+    max-width: 98%;
+    margin-top: 1em;
+}
+
+.top-products button.btn {
+    background-color: #482306;
+        color: #ebcf90;
 }
