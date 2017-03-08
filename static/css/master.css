@@ -16,6 +16,10 @@ h1 {
 #navbar-collapse-1 {
     background-color: #502b0e;
 }
+
+.navbar-brand:hover {
+    color: #EBCF9D;
+}
 nav a {
     color: #ebcf90;
     border-radius: 5px;
