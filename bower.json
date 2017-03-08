@@ -16,6 +16,8 @@
   ],
   "dependencies": {
     "jQuery": "^3.1.1",
-    "bootstrap": "^3.3.7"
+    "bootstrap": "^3.3.7",
+    "jssor-slider": "jssor#^22.1.8",
+    "slick-carousel": "^1.6.0"
   }
 }

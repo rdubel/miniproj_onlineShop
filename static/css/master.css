@@ -1,0 +1,12 @@
+h1 {
+    font-size: 50px;
+    text-align: center;
+    width: 200px;
+    height: 133px;
+    padding-top: 1em;
+    background: url("../img/logo.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #EBCF9D;
+    font-family: 'Dancing Script', cursive;
+}
