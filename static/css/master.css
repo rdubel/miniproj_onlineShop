@@ -89,3 +89,87 @@ footer {
     margin-top: 1em;
     font-size: 10px;
 }
+
+
+#sidebar-wrapper {
+    background-color: #502b0e;
+    color: #ebcf90;
+    min-height: 1200px;
+    padding: 4em 2em;
+
+}
+
+.active{
+    background-color: #ebcf90;
+    color:  #482306;
+}
+main {
+    background-color: #ebcf90;
+}
+
+.montre {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 1em;
+
+}
+.cache {
+    display: none;
+}
+article {
+    margin-bottom: 1em;
+    text-align: center;
+    border: 1px solid #482306;
+    padding: 0.5em;
+}
+article  a {
+    color:  #482306;
+    width: 100%;
+}
+#anch1  article a:hover{
+    text-decoration: none;
+    color: #502b0e;
+}
+
+section article button {
+    background-color: #482306;
+    border: 1px solid #482306;
+    color:  #ebcf90;
+    width: 60%;
+}
+
+#slider {
+    margin: 1em;
+}
+
+.slider {
+    color: #502b0e;
+    text-align: right;
+    font-size: 30px;
+}
+
+.slider h2 {
+    text-align: left;
+    font-size: 40px;
+}
+
+.slider button {
+    background-color: #502b0e;
+    color: #ebcf90;
+    border: 1px solid #502b0e;
+    width: 100%;
+    margin-top: 3em;
+
+}
+
+.hide-bullets {
+list-style:none;
+margin-left: -20px;
+margin-top:20px;
+}
+
+.descIngredients {
+    margin: 1em;
+    color: #502b0e;
+}
