@@ -115,4 +115,12 @@ $(document).ready(function() {
     });
 
 
+    //page catalogue
+
+    for (var i=0; i<catalog.length; i++){
+        
+        $("article").append.$("<img src='thumb'></img>");
+
+    }
+
 });
