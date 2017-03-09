@@ -140,30 +140,27 @@
                             <input type="text" data-minlength="6" maxlength="15" class="form-control" id="prenom" placeholder="John" data-toggle="tooltip" title="Tappez votre prenom" required>
                         </div>
                         <div class="form-group">
-                            <label for="inputPassword" class="control-label">Password</label>
-                            <div class="form-inline row">
-                                <div class="form-group col-sm-6">
-                                    <input type="password" data-minlength="6" class="form-control" id="inputPassword" placeholder="Password" data-toggle="tooltip" title="Enter your password here." required>
-                                    <div class="help-block with-errors">6 Minimum characters</div>
-                                    <div class="security">
-                                        <div id="pwstrength"></div><span id="strengthIndex"></span>
-                                    </div>
-                                </div>
-                                <div class="form-group col-sm-6">
-                                    <input type="password" data-minlength="6" class="form-control" id="inputPasswordConfirm" data-match="#inputPassword" data-match-error="Passwords not matching" placeholder="Confirm Password" data-toggle="tooltip" title="This must match the password you entered." required>
-                                    <div class="help-block with-errors"></div>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label for="eMail">Email address</label>
-                                <input type="email" class="form-control" id="eMail" placeholder="Email" data-toggle="tooltip" title="Enter your Email address here." required>
-                                <div class="help-block with-errors"></div>
-                            </div>
-                            <button type="submit" class="btn btn-success">Submit</button>
-                            <button class="btn btn-danger" type="reset">Reset</button>
-                        </form>
-                    </div>
+                            <label for="sel1" class="control-label">Sujet</label>
+                                <select class="form-control" id="sel1">
+                                    <option>Payment bug</option>
+                                    <option>Want us to fill our stock ?</option>
+                                    <option>In need of any information ?</option>
+                                </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="comment" class="control-label"></label>
+                                <textarea class="form-control" rows="5" id="comment"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="eMail">Email address</label>
+                            <input type="email" class="form-control" id="eMail" placeholder="Email" data-toggle="tooltip" title="Enter your Email address here." required>
+                            <div class="help-block with-errors"></div>
+                        </div>
+                        <button type="submit" class="btn btn-success">Submit</button>
+                        <button class="btn btn-danger" type="reset">Reset</button>
+                    </form>
                 </div>
+            </div>
         </main>
         <footer>
             <div class="row">
