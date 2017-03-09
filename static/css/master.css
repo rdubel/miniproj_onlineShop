@@ -159,6 +159,10 @@ section article button {
     font-size: 40px;
 }
 
+.slider h3 {
+    text-align: right;
+}
+
 .slider button {
     background-color: #502b0e;
     color: #ebcf90;

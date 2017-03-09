@@ -32,6 +32,19 @@ $(document).ready(function() {
             }
         ]
     });
+    for (var i=0; i<catalog.length; i++){
+        var art = $("<article></article>");
+        var img = $("<img>").attr({
+            src: catalog[i].thumb,
+            alt: 'img' + i
+        });
+        var prodname = $("<h5></h5>").html(catalog[i].name);
+        var prodesc = $("<p></p>").html(catalog[i].description.substr(0, 20) + "[...]");
+        var price = $("<p></p>").html(catalog[i].price + "€")
+        var btn = $("<button type='button' name='button'>Acheter</button>")
+        art.append(img, prodname, prodesc, price, btn);
+        $("#anch1").append(art);
+    }
 
     // When the carousel slides, auto update the text
     $('#myCarousel').on('slid.bs.carousel', function(e) {
@@ -117,10 +130,5 @@ $(document).ready(function() {
 
     //page catalogue
 
-    for (var i=0; i<catalog.length; i++){
-        
-        $("article").append.$("<img src='thumb'></img>");
-
-    }
 
 });
