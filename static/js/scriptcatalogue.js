@@ -8,7 +8,10 @@ $(document).ready(function() {
         var prodname = $("<h5></h5>").html(catalog[i].name);
         var prodesc = $("<p></p>").html(catalog[i].description.substr(0, 20) + "[...]");
         var price = $("<p></p>").html(catalog[i].price + "€")
-        var btn = $("<button type='button' name='button'>Acheter</button>")
+        var btn = $("<a>Acheter</a>").attr({
+            class: 'btn',
+            href: 'file:///home/remy/Code/miniproj_onlineShop/produi1.html?nom=' + i
+        });
         art.append(img, prodname, prodesc, price, btn);
         $("#anch1").append(art);
 
@@ -16,14 +19,6 @@ $(document).ready(function() {
 
     $('#anch1').paginate({
         perPage: 12
-    });
-
-    $('.sliderPres').slick({
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        autoplay: true,
-        autoplaySpeed: 2000,
-        dots: true
     });
 
     $('#chocoNoirs').addClass('active')
