@@ -131,28 +131,34 @@
         </header>
         <main>
             <div class="row">
-                <div class="col-md-10 col-md-push-1">
-                    <p id="pres">Welcome to Chocolate ! Buy your favorite sweets and enjoy the (eye) candy !</p>
-                    <article class="aboutus">
-                        <h2>Qui sommes nous ?</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                    </article>
-                    <div class="sliderPres">
-                        <div><img src="./static/img/bg_04.jpg" width="1200px" height="300px"></div>
-                        <div><img src="./static/img/4.jpg" width="1200px" height="300px"></div>
-                        <div><img src="./static/img/4.jpg" width="1200px" height="300px"></div>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-10 col-md-push-1">
-                    <h3>Nos produits phares</h3>
-                    <div class="top-products">
-                        <div class="prods"><img src="./static/img/1.jpeg" alt="prodimg1" width="200px" height="183px"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p><button type="button" class="btn" name="button">Voir la page du produit</button></div>
-                        <div class="prods"><img src="./static/img/2.jpg" alt="prodimg2" width="200px" height="183px"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p><button type="button" class="btn" name="button">Voir la page du produit</button></div>
-                        <div class="prods"><img src="./static/img/3.jpg" alt="prodimg3" width="200px" height="183px"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p><button type="button" class="btn" name="button">Voir la page du produit</button></div>
-                        <div class="prods"><img src="./static/img/5.jpeg" alt="prodimg4" width="200px" height="183px"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p><button type="button" class="btn" name="button">Voir la page du produit</button></div>
-                    </div>
+                <div class="col-md-5 col-md-push-4">
+                    <form data-toggle="validator" role="form">
+                        <div class="form-group">
+                            <label for="nom">Nom</label>
+                            <input type="text" data-minlength="6" maxlength="15" class="form-control" id="nom" placeholder="Doe" data-toggle="tooltip" title="Tappez votre nom" required>
+                            <label for="prenom">Prenom</label>
+                            <input type="text" data-minlength="6" maxlength="15" class="form-control" id="prenom" placeholder="John" data-toggle="tooltip" title="Tappez votre prenom" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="sel1" class="control-label">Sujet</label>
+                                <select class="form-control" id="sel1">
+                                    <option>Payment bug</option>
+                                    <option>Want us to fill our stock ?</option>
+                                    <option>In need of any information ?</option>
+                                </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="comment" class="control-label"></label>
+                                <textarea class="form-control" rows="5" id="comment"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="eMail">Email address</label>
+                            <input type="email" class="form-control" id="eMail" placeholder="Email" data-toggle="tooltip" title="Enter your Email address here." required>
+                            <div class="help-block with-errors"></div>
+                        </div>
+                        <button type="submit" class="btn btn-success">Submit</button>
+                        <button class="btn btn-danger" type="reset">Reset</button>
+                    </form>
                 </div>
             </div>
         </main>
