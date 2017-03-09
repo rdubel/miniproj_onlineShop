@@ -1,14 +1,51 @@
-$(document).ready(function(){
+$(document).ready(function() {
 
     $('.search-panel .dropdown-menu').find('a').click(function(e) {
         e.preventDefault();
-        var param = $(this).attr("href").replace("#","");
+        var param = $(this).attr("href").replace("#", "");
         var concept = $(this).text();
         $('.search-panel span#search_concept').text(concept);
         $('.input-group #search_param').val(param);
     });
     $('.sliderPres').slick();
+    $('.top-products').slick({
+        centerMode: true,
+        centerPadding: '60px',
+        slidesToShow: 3,
+        responsive: [{
+                breakpoint: 768,
+                settings: {
+                    arrows: false,
+                    centerMode: true,
+                    centerPadding: '40px',
+                    slidesToShow: 3
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    arrows: false,
+                    centerMode: true,
+                    centerPadding: '40px',
+                    slidesToShow: 1
+                }
+            }
+        ]
+    });
 
+    // When the carousel slides, auto update the text
+    $('#myCarousel').on('slid.bs.carousel', function(e) {
+        var id = $('.item.active').data('slide-number');
+        $('#carousel-text').html($('#slide-content-' + id).html());
+    });
+
+    $('.sliderPres').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        dots: true
+    });
 
     $('#chocoNoirs').addClass('active')
     $('#anch1').removeClass('cache')
@@ -65,57 +102,17 @@ $(document).ready(function(){
     });
 
     $('#myCarousel').carousel({
-               interval: 5000
-       });
+        interval: 5000
+    });
 
-       $('#carousel-text').html($('#slide-content-0').html());
+    $('#carousel-text').html($('#slide-content-0').html());
 
-       //Handles the carousel thumbnails
-      $('[id^=carousel-selector-]').click( function(){
-           var id = this.id.substr(this.id.lastIndexOf("-") + 1);
-           var id = parseInt(id);
-           $('#myCarousel').carousel(id);
-       });
-
-
-       // When the carousel slides, auto update the text
-       $('#myCarousel').on('slid.bs.carousel', function (e) {
-                var id = $('.item.active').data('slide-number');
-               $('#carousel-text').html($('#slide-content-'+id).html());
-       });
-
-    $('.sliderPres').slick({
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        autoplay: true,
-        autoplaySpeed: 2000,
-        dots: true
+    //Handles the carousel thumbnails
+    $('[id^=carousel-selector-]').click(function() {
+        var id = this.id.substr(this.id.lastIndexOf("-") + 1);
+        var id = parseInt(id);
+        $('#myCarousel').carousel(id);
     });
 
 
-$('.top-products').slick({
-  centerMode: true,
-  centerPadding: '60px',
-  slidesToShow: 3,
-  responsive: [
-    {
-      breakpoint: 768,
-      settings: {
-        arrows: false,
-        centerMode: true,
-        centerPadding: '40px',
-        slidesToShow: 3
-      }
-    },
-    {
-      breakpoint: 480,
-      settings: {
-        arrows: false,
-        centerMode: true,
-        centerPadding: '40px',
-        slidesToShow: 1
-      }
-    }
-  ]
-});
 });
