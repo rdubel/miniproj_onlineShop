@@ -46,6 +46,10 @@ $(document).ready(function() {
         $("#anch1").append(art);
     }
 
+    $('#anch1').paginate({
+        perPage: 12
+	});
+
     // When the carousel slides, auto update the text
     $('#myCarousel').on('slid.bs.carousel', function(e) {
         var id = $('.item.active').data('slide-number');

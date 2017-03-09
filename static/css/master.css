@@ -1,3 +1,8 @@
+#mainside {
+    display: flex;
+    align-items: stretch !important;
+}
+
 header {
     background-color: #98531a;
 }
@@ -102,7 +107,7 @@ footer {
 #sidebar-wrapper {
     background-color: #502b0e;
     color: #ebcf90;
-    min-height: 1200px;
+    height: 100%;
     padding: 4em 2em;
 
 }
@@ -115,15 +120,14 @@ footer {
 .montre {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    margin: 1em;
+    justify-content: space-around;
 
 }
 .cache {
     display: none;
 }
 article {
-    margin-bottom: 1em;
+    margin: 0.5em;
     text-align: center;
     border: 1px solid #482306;
     padding: 0.5em;
@@ -186,9 +190,15 @@ section article button {
 
 main {
     background-color: #ebcf90;
-    padding: 3em;
+    padding: 1.5em;
+}
+.col-md-9 {
+    padding-left: 0;
 }
 
+#wrapper {
+    padding-right: 0;
+}
 #pres {
     text-align: center;
     font-family: 'Dancing Script', cursive;
