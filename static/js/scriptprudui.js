@@ -1,7 +1,7 @@
 $(document).ready(function() {
 
     var id = GET_PARAM("nom");
-    console.log(catalog[id]);
+    // console.log(catalog[id]);
     var cont = $(".carousel-inner")
 
     var img = $("<img>").attr({
@@ -71,6 +71,31 @@ $(document).ready(function() {
         $('#myCarousel').carousel(id);
     });
 
+    var bnto = $("button")
 
+    $(bnto).click(function() {
+        var recuperaPanier = sessionStorage.getItem("panier");
+
+        if (recuperaPanier == undefined) {
+
+            var panierJson = {}
+
+        } else {
+            var panierJson = JSON.parse(recuperaPanier)
+        }
+
+        if (panierJson[id] == undefined) {
+
+            panierJson[id] = 1
+        } else {
+            panierJson[id]++
+        }
+
+        var panier = JSON.stringify(panierJson)
+
+        sessionStorage.setItem("panier", panier);
+
+
+    });
 
 });

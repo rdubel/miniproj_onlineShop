@@ -1,4 +1,5 @@
 $(document).ready(function() {
+
     for (var i = 0; i < catalog.length; i++) {
         var art = $("<article></article>");
         var img = $("<img>").attr({
@@ -10,12 +11,13 @@ $(document).ready(function() {
         var price = $("<p></p>").html(catalog[i].price + "€")
         var btn = $("<a>Acheter</a>").attr({
             class: 'btn',
-            href: 'file:///home/remy/Code/miniproj_onlineShop/produi1.html?nom=' + i
+            href: 'file:///home/salwa/Code/miniproj_onlineShop/produi1.html?nom=' + i
         });
         art.append(img, prodname, prodesc, price, btn);
         $("#anch1").append(art);
 
     }
+    
 
     $('#anch1').paginate({
         perPage: 12
