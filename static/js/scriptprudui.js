@@ -1,7 +1,6 @@
 $(document).ready(function() {
 
     var id = GET_PARAM("nom");
-    console.log(catalog[id]);
     var cont = $(".carousel-inner")
 
     var img = $("<img>").attr({
@@ -71,6 +70,24 @@ $(document).ready(function() {
         $('#myCarousel').carousel(id);
     });
 
-
-
+    $("#tocart").click(function() {
+        if (localStorage.panier == null) {
+            var obj = {};
+            obj[id] = 1;
+            var json_obj =  JSON.stringify(obj);
+            localStorage.setItem("panier", json_obj);
+        } else {
+            var stordobj = localStorage.getItem("panier");
+            var updobj = JSON.parse(stordobj);
+            if (updobj[id] != undefined) {
+                updobj[id]++;
+                var json_updobj = JSON.stringify(updobj)
+                localStorage.setItem("panier", json_updobj);
+            } else {
+                updobj[id] = 1;
+                var json_updobj = JSON.stringify(updobj)
+                localStorage.setItem("panier", json_updobj);
+            }
+        }
+    });
 });

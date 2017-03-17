@@ -19,6 +19,8 @@
     "jssor-slider": "jssor#^22.1.8",
     "slick-carousel": "^1.6.0",
     "font-awesome": "fontawesome#^4.7.0",
-    "paginate": "^0.3.0"
+    "paginate": "^0.3.0",
+    "bootstrap-slider": "*",
+    "seiyria-bootstrap-slider": "https://github.com/seiyria/bootstrap-slider.git#^9.7.2"
   }
 }

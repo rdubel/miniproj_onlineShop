@@ -237,3 +237,8 @@ h3 {
 .prods {
     text-align: center;
 }
+
+.slider {
+    width: 65% !important;
+    margin: 0 0.5em;
+}

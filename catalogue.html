@@ -10,11 +10,10 @@
     <link rel="stylesheet" href="./static/external/slick-carousel/slick/slick.css">
     <link rel="stylesheet" href="./static/external/slick-carousel/slick/slick-theme.css">
     <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
-    <link rel=stylesheet href=./static/css/master.css>
-    <link rel="stylesheet" href="./static/external/font-awesome/css/font-awesome.min.css">
-    <!-- <link rel="stylesheet" href="./static/external/startbootstrap-simple-sidebar/css/bootstrap.min.css"> -->
     <link rel="stylesheet" href="./static/external/paginate/src/jquery.paginate.css">
-
+    <link rel="stylesheet" href="./static/external/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./static/external/seiyria-bootstrap-slider/dist/css/bootstrap-slider.css">
+    <link rel=stylesheet href=./static/css/master.css>
 </head>
 <body>
     <div class="container">
@@ -39,7 +38,7 @@
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse" id="navbar-collapse-1">
                     <ul class="nav navbar-nav">
-                        <li><a href="#">Home</a></li>
+                        <li><a href="file:///home/remy/Code/miniproj_onlineShop/index.html#">Home</a></li>
                         <li><a href="#">Nos Boutiques</a></li>
                         <li><a href="#">Offres</a></li>
                         <li><a href="#">Contact</a></li>
@@ -125,7 +124,7 @@
                         </span>
                     </div>
                 </div>
-                <a href="#" class="btn btn-lg">
+                <a href="file:///home/remy/Code/miniproj_onlineShop/cart.html" class="btn btn-lg">
                     <span class="glyphicon glyphicon-shopping-cart"></span> Shopping Cart
                 </a>
             </div>
@@ -146,16 +145,18 @@
                             <li class=""><a href="#anch4" data-scroll="" id="nougats">Nougats</a></li>
                             <li class=""><a href="#anch5" data-scroll="" class="" id="offrets">Offrets</a></li>
                             <li class=""><a href="#anch6" data-scroll="" class="" id="paques">Chocolats de Pâques</a></li>
-                        </ul>
-                    </nav>
+                            <li>
+                                Filter by price interval: <br>
+                                20 <input id="ex2" type="text" class="span2" value="" data-slider-min="20" data-slider-max="50" data-slider-step="1" data-slider-value="[20,50]"/> 50</li>
+                            </ul>
+                        </nav>
+                    </div>
                 </div>
-                <!-- Page content -->
-            </div>
 
-            <div class="col-md-9">
-                <main>
-                    <section id="anch1" class="cache">
-                        <!-- <article class="">
+                <div class="col-md-9">
+                    <main>
+                        <section id="anch1" class="cache">
+                            <!-- <article class="">
                             <img src="./static/img/DSCF2007_1.jpg" alt="image1" width="150px" height="150px">
                             <p>Chocolate Negro</p>
                             <p>25.99€</p>
@@ -211,13 +212,12 @@
         </footer>
     </div>
 
-    <script src="./static/js/catalog_x100.js" type="text/javascript"></script>
     <script src="./static/external/jquery/dist/jquery.js" charset="utf-8"></script>
     <script src="./static/external/slick-carousel/slick/slick.min.js" charset="utf-8"></script>
     <script src="./static/external/bootstrap/dist/js/bootstrap.js" charset="utf-8"></script>
+    <script src="./static/external/paginate/src/jquery.paginate.js" type="text/javascript"></script>
+    <script src="./static/external/seiyria-bootstrap-slider/dist/bootstrap-slider.js" charset="utf-8"></script>
     <script src="./static/js/scriptcatalogue.js" charset=utf-8></script>
-    <script src="./static/external/paginate/src/jquery.paginate.js" type="text/javascript">
-    </script>
 </body>
 
 </html>
