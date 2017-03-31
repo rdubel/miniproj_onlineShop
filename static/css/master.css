@@ -126,19 +126,28 @@ footer {
 .cache {
     display: none;
 }
-article {
+#prews {
+    text-align: center;
+}
+article:not(.aboutus) {
     margin: 0.5em;
     text-align: center;
     border: 1px solid #482306;
     padding: 0.5em;
+    width: 25%
+}
+.aboutus {
+    text-align: center;
 }
 article  a {
-    color:  #482306;
+    background-color: #482306;
+    color: #ebcf90;
     width: 100%;
 }
 #anch1  article a:hover{
     text-decoration: none;
     color: #502b0e;
+    background-color: #ebcf90;
 }
 
 section article button {
@@ -217,7 +226,7 @@ h3 {
 
 
 .top-products img {
-    margin-left: 2em;
+    margin-left: 3.8em;
 }
 
 .top-products > div {
