@@ -22,7 +22,7 @@ error_reporting(E_ALL);
 <body>
     <div class="container">
         <?php
-        include "header.php";
+        require "header.php";
         ?>
         <main>
             <div class="row">

@@ -25,7 +25,7 @@ $first_part = $components[2];
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="navbar-collapse-1">
             <ul class="nav navbar-nav">
-                <li><a href="index.php" class="<?php if ($first_part=="" or $first_part="index.php" ) {echo "active";} else {echo "noactive";} ?>">Home</a></li>
+                <li><a href="index.php" class="<?php if ($first_part=="" || $first_part=="index.php") {echo "active";} else {echo "noactive";} ?>">Home</a></li>
                 <li><a href="#" class="">Nos Boutiques</a></li>
                 <li><a href="catalogue.php" class="<?php if ($first_part=="catalogue.php") {echo "active";} else {echo "noactive";} ?>">Offres</a></li>
                 <li><a href="contact.php" class="<?php if ($first_part=="contact.php") {echo "active";} else {echo "noactive";} ?>">Contact</a></li>
