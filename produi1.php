@@ -75,12 +75,13 @@ error_reporting(E_ALL);
                         $sql = 'SELECT * FROM Product WHERE id ='. $id . ';';
 
                         $res = $mysql->query($sql);
-                        while (NULL !== ($row = $res->fetch_array())) {
-                            echo "<h2>$row[name]</h2>";
-                            echo "<h3>$row[price] €</h3>";
-                            echo "<button type='button' name='button' id='tocart'>Ajout. au panier</button>";
-                        }
-
+                        $row = $res->fetch_array();
+                        echo "<h2>$row[name]</h2>";
+                        echo "<h3>$row[price] €</h3>";
+                        echo "<form action='cart.php' method='post'>";
+                        echo "<button type='submit' name='button' id='tocart' value=".$id.">Ajout. au panier</button>";
+                        echo "</form>";
+                        $mysql->close();
                         ?>
                     </div>
                 </div>
@@ -138,7 +139,7 @@ error_reporting(E_ALL);
                         while (NULL !== ($row = $res->fetch_array())) {
                             echo "<p>$row[description]</p>";
                         }
-
+                        $mysql->close();
                         ?>
                     </div>
                 </div>
