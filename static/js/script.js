@@ -32,9 +32,10 @@ $(document).ready(function() {
         var idp = $(this).data("id");
         var qtty = $(this).prev().html()
         qtty++;
+        var uprice = parseInt($(this).parent().next(".uprice").html());
+        $(this).parent().next().next(".tprice").html(uprice * qtty + ' €');
         $(this).prev().html(qtty);
-        $(this).parent().next(".tprice").html("LEMAO");
-        $.post('update-cart.php', { product : idp, btn : "plus" }, function(data, textStatus, xhr) {
+        $.post('update-cart.php', { product : idp, btn : "plus" }, function() {
             $('tbody > tr').slice(-4).remove();
             generateCart();
         });
@@ -42,12 +43,17 @@ $(document).ready(function() {
      $(".minus").click(function() {
         var idp = $(this).data("id");
         var qtty = $(this).next().html();
-        qtty--;
+        if (qtty > 1) {
+            qtty--;
+            $.post('update-cart.php', { product : idp, btn : "minus" }, function() {
+                $('tbody > tr').slice(-4).remove();
+                generateCart();
+            });
+        }
+        var uprice = parseInt($(this).parent().next(".uprice").html());
+        $(this).parent().next().next(".tprice").html(uprice * qtty + ' €');
         $(this).next().html(qtty);
-        $.post('update-cart.php', { product : idp, btn : "minus" }, function(data, textStatus, xhr) {
-            $('tbody > tr').slice(-4).remove();
-            generateCart();
-        });
+
      });
 
     generateCart();
